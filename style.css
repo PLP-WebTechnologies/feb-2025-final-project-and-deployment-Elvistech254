@@ -1,0 +1,114 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #39af35;
+}
+
+header {
+  background-color: #333;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: rgb(236, 108, 129);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+footer {
+  background-color: #333;
+  color: rgb(226, 148, 213);
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.hero {
+  text-align: center;
+  background: linear-gradient(135deg, #ad1919 80%, #d7263d 100%);
+  color: #442525;
+  padding: 3rem;
+  margin-top: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: box-shadow 0.3s;
+}
+
+.latest-posts {
+  display: flex;
+  font-weight: 200;
+  font-style: italic;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2rem;
+}
+
+.latest-posts .post {
+  background-color: #29a3c2;
+  padding: 3rem;
+  margin: 1rem;
+  width: 45%;
+  border-radius: 16px;
+  color: #1b0202;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-bg {
+  background-color: #0a4b18;
+}
+
+.blog-bg {
+  background-color: #3a2350;
+}
+
+.contact-bg {
+  background-color: #254146;
+}
+/* Add some hover effects */
+.latest-posts .post:hover {
+  background-color: #1b0202;
+  color: #995555;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+}
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .latest-posts {
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+  }
+
+  .latest-posts .post {
+    width: 80%;
+    margin: 3rem 0;
+    background-color: aquamarine;
+    color: #333;
+  }
+}
